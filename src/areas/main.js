@@ -25,6 +25,7 @@ import { Router } from "../components/Router"
 import { useUiContext, useSettingsContext } from "../contexts"
 import About from "../pages/about"
 import Dashboard from "../pages/dashboard"
+import Tablet from "../pages/tablet"
 import Settings from "../pages/settings"
 import ExtraPage from "../pages/extrapages"
 import { Informations } from "../areas/informations"
@@ -49,6 +50,10 @@ const defRoutes = {
     INFORMATIONS: {
         component: <Informations />,
         path: "/informations",
+    },
+    TABLET: {
+        component: <Tablet />,
+        path: "/tablet",
     },
 }
 

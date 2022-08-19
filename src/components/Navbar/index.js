@@ -42,6 +42,7 @@ import {
     LogOut,
     Trello,
     ChevronDown,
+    Check
 } from "preact-feather"
 
 /*
@@ -66,6 +67,12 @@ const defaultLinks = [
         icon: <Settings />,
         href: "/settings",
         id: "settingsLink",
+    },
+    {
+        label: "tablet",
+        icon: <Check />,
+        href: "/tablet",
+        id: "tabletLink",
     },
 ]
 
