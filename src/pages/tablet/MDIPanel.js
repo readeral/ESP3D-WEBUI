@@ -62,10 +62,7 @@ const MDIpanel = (props) => {
                     <button onClick={() => openFileUploadBrowser()}>Upload</button><button onClick={() => readFile()}>Load</button>
                 </div>
                 <textarea class="gcode" id="gcode" rows="8" placeholder="GCode File Display" spellcheck="false" readonly={true}>{gcodePreview}</textarea>
-                <canvas id="small-toolpath" class="previewer" width="434" height="170"></canvas>
-            </div>
-            <div class="grid-10">
-                <textarea class="messages" id="messages" rows="4" spellcheck="false" readonly={true}>Serial Messages</textarea>
+                <canvas id="small-toolpath" class="previewer"></canvas>
             </div>
         </Fragment>
     )

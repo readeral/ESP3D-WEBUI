@@ -21,7 +21,9 @@ const PositionPanel = ({targetContext: {positions}, sendCommand, sendZeroCommand
 
             {/* iterate over every axis key, filter out all wpos keys.
             Seemed the most efficient way to get all represented axes */}
-
+            <div class="axis-container" style={{
+                gridTemplateColumns: `repeat(${Object.keys(positions).filter(axiskey => !axiskey.includes('w')).length}, 300px`
+            }}>
             {Object.keys(positions).filter(axiskey => !axiskey.includes('w')).map(axis => {
                 const workingAxis = "w" + axis
                 const labelAxis = axis.toUpperCase();
@@ -43,6 +45,7 @@ const PositionPanel = ({targetContext: {positions}, sendCommand, sendZeroCommand
                     </div>
                 )
             })}
+            </div>
         </div> 
     )
 }

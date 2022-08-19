@@ -7,6 +7,7 @@ import TabletNav from "./tabletNav";
 import PositionPanel from "./positionPanel";
 import JogPanel from "./jogPanel";
 import MDIpanel from "./MDIPanel";
+import TabletTerminal from "./tabletTerminal";
 
 import { espHttpURL, replaceVariables } from "../../components/Helpers"
 import { useUiContext, useUiContextFn } from "../../contexts"
@@ -425,6 +426,7 @@ const Tablet = () => {
                 readFile={readFile}
                 gcodePreview={gcodePreview}
             />
+            <TabletTerminal />
         </div>
     )
 }
